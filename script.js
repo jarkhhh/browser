@@ -32,12 +32,12 @@ const API_KEY = 'AIzaSyCXX32YeN6U3fURzBMaYc607dThQVgQO8o'; // Replace with your 
                 const li = document.createElement('li');
                 li.classList.add('result-item');
                 li.addEventListener('click', () => {
-                    window.open(item.link, '_blank');
+                    window.open(item.link);
                 }
                 );
             
                 li.innerHTML = `
-                    <a href="${item.link}" target="_blank" class='title'>${item.title}</a>
+                    <a href="${item.link}" class='title'>${item.title}</a>
                     <p>${item.snippet}</p>
                 `;
                 resultsContainer.appendChild(li);
